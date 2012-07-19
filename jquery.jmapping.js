@@ -7,7 +7,7 @@
  */
 
 (function($){
-  google = google || {};
+  window.google = window.google || {};
   $.jMapping = function(map_elm, options){
     var settings, gmarkers, mapped, map, markerManager, places, bounds, jMapper, info_windows;
     map_elm = (typeof map_elm == "string") ? $(map_elm).get(0) : map_elm;
