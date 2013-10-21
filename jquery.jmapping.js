@@ -185,7 +185,7 @@
           });
         }
 
-        gmarkers[parseInt(place_data.id, 10)] = marker;
+        gmarkers[place_data.id.toString().replace(/[^a-zA-Z0-9]/g,"")] = marker;
         return marker;
       };
       
